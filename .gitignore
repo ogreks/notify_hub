@@ -1,0 +1,34 @@
+# 忽略编译生成的文件
+/target/
+
+# 忽略编辑器临时文件和文件夹
+*~
+*.swp
+.vscode/
+.idea/
+
+# 忽略依赖目录（Cargo.lock 用于锁定依赖版本）
+Cargo.lock
+
+# 忽略自动生成的文件（Rustfmt 和 Clippy 生成的文件）
+# 使用 cargo fmt 和 cargo clippy 时会生成这些文件
+**/*.rs.bk
+**/*.rs.orig
+**/*.rs.bk.*
+**/*.rs.orig.*
+
+# 忽略测试结果
+**/target/debug/
+**/target/release/
+**/target/debug/deps/
+**/target/release/deps/
+
+# 忽略文档目录
+/target/doc/
+/target/debug/build/
+
+# 忽略日志文件
+**/*.log
+
+# 忽略自定义配置文件
+/config.toml
